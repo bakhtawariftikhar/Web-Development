@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK NO 1</title>
+    <!--To beautify the webpage, I added the style sheet of task.css file--->
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+   <h1 style="font-size: 200%">Functional Requirements:</h1>
+   <!-- I used a button tag to make a button and then named it 'Hide/Show'.-->
+    <button onclick="myFunction()">Hide/Show</button>
+   <!--When this hide button will be clicked once,it will hide the list and when it is clicked again,it will show the list.-->
+
+<div id="myDIV">
+    <dl>
+        <dd>1. Software must have a logo and name. </dd>
+        <dd>2. Client must have to create account in order to get registered first.For that purpose, he needs to input his phone number or email adress.</dd>
+        <dd>3. A Verification email is sent to user whenever he/she registers for the first time on some software system.</dd>
+       <dd>4. System must not allow multiple clients to use one account.</dd>
+        <dd>5. Clients will have to login to his account by entering a valid user ID and password.</dd>
+        <dd>6. Authentication of user whenever he/she logs into the system.</dd>
+       <dd>7. System will view the details of software, instructions on how to use it and method of payment.</dd>
+       <dd>8. Client will then do oline payment via easypaisa, jazz cash, paypal etc. Without payment, client will not be able to proceed further.</dd>
+       <dd>9. Backend management system can Generate a Session ID for each user and send it to the user.</dd>
+       <dd>10. Client will then select suitable time for session. </dd>
+       <dd>11. Client must join the session by session ID provided to him at fixed time.</dd>
+           <dd>12. Client will be able to ask questions and The software will process all the textual queries.</dd>
+       <dd>13. The software will answer these queries in accordance to citations of PPC and Constitution.</dd>
+       <dd>14. If client asks any question not related to law, that will be automatically ignored.</dd>
+       <dd>15. Backend management system can Auto-cancel seession if client fails to reach within the session time.</dd>
+       <dd>16.System work on client-server Architecture. It will require an internet server.</dd>
+         <dd>17. The software shall keep track of all processes like payment of money. </dd>
+       <dd>18. The software will keep record of clients.</dd>
+           <dd>19. The software should enable the clients to logout after using the application when the client clicks on the logout button.</dd>  
+           <dd>20. The software must keep the personal information of clients secure.</dd>
+           <dd>21. System must shutdown in case of a cyber attack.</dd>
+           </dl>
+
+</div> 
+<script>
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } 
+    else {
+      x.style.display = "none";
+    }
+  }
+</script>
+ 
+<h2 style="font-size: 200%">Non Functional Requirements:</h2> 
+
+<!--I again used a button tag to make another button and then named it 'Hide/Show'-->
+<button onclick="Function()">Hide/Show</button>
+ <!--When this hide button will be clicked once,it will hide the list and when it is clicked again,it will show the list.-->
+<div id="DIV">
+<dl>
+    <dd>1. After completion of registration process,the system must generate session ID within 24 hours.</dd>
+    <dd>2. The processing of each request should be done within 10 seconds.</dd>
+<dd>3.  The software should easy to use for every user. </dd>
+<dd>4.  The software should be made accessible to the people who live everywhere in the world. Anyone can use this software regardless of the location and can get the information they acquire.</dd>
+<dd>5.  The performance of the software should be fast and efficient. The software should be always up to date.</dd>
+<dd>6.   The software will be efficient in using processing resources.</dd>
+<dd>7.  The software must operate 24 hours a day.</dd>
+<dd>8.  The clients will be different types of people having different levels of understanding of technical skills, therefore the software should be understandable by all the users. Consequently, the Application should provide an easy to use, friendly Graphical User Interface (GUI).</dd>
+<dd>9.  Data inserted by user will be secured and saved by this software, and will be redundant, in order to perform the exact action in specified situation.</dd>
+<dd>10. The software should be maintained in order to perform the best of its ability.</dd>
+<dd>11. The software should be flexible enough to allow improvements for the future and should be able to adapt any additional future change in activities; the application components can be modified for more changes and features allow the addition of new features without disturbing the main functionalities of the application.</dd>
+<dd>12. The software should be able to recover from an unsuitable problem .and should back up data.</dd>
+<dd>13. The software will be able to handle unexpected errors quickly and easily.</dd>
+<dd>14. The loading time of software will be 3 seconds when the number of simultaneous users are > 10000 </dd>
+<dd>15. ter a certain number of login attempts, a security system may lock an account to protect a client's information from potential hackers. To unlock their account, a user can typically call the company to verify their identity and set a new password.</dd>
+<dd>16.  Software shall be able to function properly on multiple devices to improve portability.</dd>
+<dd>17. This software will have features that match the geographical location of its users, including aspects such as:Languages,Currencies</dd>
+<dd>18. Database security must meet HIPAA requirements.</dd>
+<dd>19. The system will be scalable enough to support 1,000,000 visits at the same time while maintaining optimal performance.</dd>
+<dd>20. Clients will be able to change the initially assigned login password immediately after the first successful login. Moreover, the initial should never be reused.</dd>
+<dd>21. The software will follow the service-oriented architecture.</dd>
+</div>
+<script>
+    function Function() {
+    var x = document.getElementById("DIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+</dl>
+<h3 style="font-size: 200%">Cost of project</h3>
+<!-- Now estimating the cost of my project.-->
+<form oninput="x.value=(parseInt(a.value)*parseInt(b.value))">
+  <label for="a">Cost Rate per hour: </label>
+      <input type="text" id="a" name="a"value="5$"></input><br></br>
+      <label for="b">Input number of hours:</label>
+        <input type="text" id="b" name="b"value=""></input>
+      
+        <button type="button" onclick="mydata()">Submit</button>
+        <label for="x"></label>
+    
+        <output hidden id="Output" name="x"for="a b "></output>
+        <p id="demo"></p>
+        <script>
+          function mydata() {
+    var x = document.getElementById("Output").value;
+     document.getElementById("demo").innerHTML = ("Total cost of project is: " + x + "$");
+  }
+  </script>
+</form>
+  
+<footer>
+    <p>Discord Username: Bakhtawar#0322</p> 
+    <a href="mailto: bakhtawariftikhar214@gmail.com">Send Email </a>
+</footer>
+</body>
+</html>
